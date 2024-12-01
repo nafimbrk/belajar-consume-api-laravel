@@ -11,7 +11,7 @@ class QuestionController extends Controller
     public function fetchInsert()
     {
         $response = Http::get('https://quizapi.io/api/v1/questions', [
-            'apiKey' => '8ar97NkpcpL4ONPnszxRKMOvU8aweN1AvrLl0UYX',
+            'apiKey' => 'YOUR_API_KEY',
             'limit' => 10
         ]);
         $questions = json_decode($response->body());
